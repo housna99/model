@@ -1,0 +1,133 @@
+.hero {
+  width: 100%;
+  height: 100vh; /*importat!!*/
+  background-image: url("hero.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+.banner {
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  color: rgb(196, 116, 116);
+  padding: 4rem 0;
+  width: 50vw;
+  border-radius: 5%;
+  border: 1px solid black;
+}
+.modal-overlay {
+  visibility: hidden;
+  /*z-index: -10;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  place-items: center;
+  display: grid;
+  background: rgba(73, 166, 233, 0.5);
+}
+.modal-container {
+  background-color: rgb(247, 247, 248);
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  width: 51%;
+  height: 50%;
+  position: absolute;
+}
+.modal-container h3 {
+  margin-top: 25%;
+}
+.close-btn {
+  background-color: transparent;
+  color: red;
+  border: none;
+  width: 5%;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.open-modal {
+  visibility: visible;
+  /*z-index: 10;*/
+}
+/*  CORRIGE!!
+.hero {
+  min-height: 100vh;
+  background: url("./hero.jpeg") center/cover no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+.banner {
+  background: var(--clr-white);
+  padding: 4rem 0;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  text-align: center;
+  width: 90vw;
+  max-width: var(--fixed-width);
+}
+.btn_modal {
+  margin-top: 2rem;
+  background: var(--clr-primary-5);
+  border-color: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.btn_modal:hover {
+  background: transparent;
+  color: var(--clr-primary-5);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 166, 233, 0.5);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -10;
+}
+// OPEN/CLOSE MODAL /
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+.modal-container {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  width: 90vw;
+  height: 30vh;
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-red-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.close-btn:hover {
+  color: var(--clr-red-light);
+  transform: scale(1.3);
+}
+*/
